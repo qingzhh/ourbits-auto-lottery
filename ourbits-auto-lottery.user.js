@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OurBits 自动抽奖
 // @namespace    https://github.com/qingzhh/ourbits-auto-lottery
-// @version      1.00
+// @version      1.01
 // @description  OurBits (lottery.php) 自动抽奖脚本，支持无刷新直连与跨页续航、十连抽/单抽、保底魔力熔断、收益与单GB成本统计、JSON导入导出
 // @author       qingzhh
 // @match        https://ourbits.club/lottery.php*
@@ -586,7 +586,8 @@
     #ob-lottery-panel * { box-sizing: border-box !important; }
     #ob-lottery-panel.collapsed { width: auto !important; overflow: hidden !important; }
     #ob-lottery-panel.collapsed .ob-body { display: none !important; }
-    #ob-lottery-panel .ob-hidden { display: none !important; }
+    #ob-lottery-panel .ob-hidden,
+    #ob-lottery-panel .ob-row.ob-hidden { display: none !important; }
     #ob-lottery-panel .ob-header {
       display: flex !important;
       align-items: center !important;
@@ -750,7 +751,7 @@
     panel.innerHTML = `
       <div class="ob-header" id="ob-drag-handle">
         <div class="ob-title">
-          <span>🎰 OurBits 自动抽奖 v1.00</span>
+          <span>🎰 OurBits 自动抽奖 v1.01</span>
           <span class="ob-badge" id="ob-status-badge">待机</span>
         </div>
         <button class="ob-toggle-btn" id="ob-collapse-btn">${state.cfg.collapsed ? '展开' : '收起'}</button>

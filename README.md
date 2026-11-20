@@ -1,6 +1,6 @@
 # OurBits 自动抽奖
 
-![version](https://img.shields.io/badge/version-1.00-blue)
+![version](https://img.shields.io/badge/version-1.01-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![platform](https://img.shields.io/badge/userscript-Tampermonkey%20%7C%20Violentmonkey-orange)
 
@@ -11,7 +11,7 @@ OurBits（`lottery.php`）油猴自动抽奖脚本：无刷新直连 / 跨页续
 1. 先安装脚本管理器：[Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)。
 2. 安装脚本：
 
-👉 **[一键安装 OurBits 自动抽奖 v1.00](https://raw.githubusercontent.com/qingzhh/ourbits-auto-lottery/main/ourbits-auto-lottery.user.js)**
+👉 **[一键安装 OurBits 自动抽奖 v1.01](https://raw.githubusercontent.com/qingzhh/ourbits-auto-lottery/main/ourbits-auto-lottery.user.js)**
 
 脚本管理器会弹出安装页，点「安装」即可。之后打开 <https://ourbits.club/lottery.php>，右上角会出现控制面板。
 
@@ -56,6 +56,11 @@ OurBits（`lottery.php`）油猴自动抽奖脚本：无刷新直连 / 跨页续
 ## 免责声明
 
 本脚本仅用于个人账号的自动化操作。请自行评估目标站点的使用规则与账号风险，合理设置请求间隔，控制使用频率。因使用本脚本产生的任何后果由使用者自行承担。
+
+## 更新日志
+
+- **v1.01**：修复「一抽到底」模式下「目标轮数」输入框仍显示的样式优先级问题。
+- **v1.00**：首个精简发布版，双引擎、抽奖策略、保底熔断与统计面板。
 
 ## 许可证
 
